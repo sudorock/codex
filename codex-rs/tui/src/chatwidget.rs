@@ -4341,6 +4341,7 @@ impl ChatWidget {
             }
             StatusLineItem::ProjectRoot => self.status_line_project_root_name(),
             StatusLineItem::GitBranch => self.status_line_branch.clone(),
+            StatusLineItem::AppMcpUrl => self.config.connectors_mcp_url.clone(),
             StatusLineItem::UsedTokens => {
                 let usage = self.status_line_total_usage();
                 let total = usage.tokens_in_context_window();
