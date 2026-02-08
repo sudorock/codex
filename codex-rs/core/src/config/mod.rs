@@ -977,7 +977,6 @@ pub struct ConfigToml {
     /// Base URL for requests to ChatGPT (as opposed to the OpenAI API).
     pub chatgpt_base_url: Option<String>,
     /// Optional override for the Codex Apps MCP endpoint URL.
-    #[serde(alias = "connectors_mcp_url")]
     pub apps_mcp_url: Option<String>,
 
     pub projects: Option<HashMap<String, ProjectConfig>>,
