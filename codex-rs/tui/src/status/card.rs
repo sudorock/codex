@@ -197,7 +197,7 @@ impl StatusHistoryCell {
             model_details,
             directory: config.cwd.clone(),
             approval,
-            app_mcp_url: config.connectors_mcp_url.clone(),
+            app_mcp_url: config.apps_mcp_url.clone(),
             sandbox,
             agents_summary,
             collaboration_mode: collaboration_mode.map(ToString::to_string),
